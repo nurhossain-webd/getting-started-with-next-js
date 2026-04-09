@@ -45,7 +45,7 @@ const BlogPage = () => {
             <h2 className="text-3xl">Blogs</h2>
             {blogs.map(data => <div key={data.id}>
                 <h2 className="text-2xl font-bold mb-4">{data.title}</h2>
-                <Link href=""> show details</Link>
+                <Link href={`/blogs/${data.id}`}> show details</Link>
             </div>)}
         </div>
     );
