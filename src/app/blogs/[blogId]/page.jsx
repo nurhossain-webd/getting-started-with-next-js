@@ -40,7 +40,6 @@ const blogs = [
 const BlogDetailPage = async ({ params }) => {
     const { blogId } = await params;
     const blog = blogs.find((b) => b.id === parseInt(blogId));
-    console.log("params", blog);
     return (
         <div>
             <h4>Blog detail comming soon</h4>
